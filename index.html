@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WaterBottle</title>
+    <title>WaterBottle </title>
     <script src="waterbottle.js"></script>
 </head>
 <body>
-    <h1>WaterBottle</h1>
+  <h2>Water Bottle Calculator</h2> 
     <p>WaterBottle is a simple class that represents a water bottle. It has properties such as capacity, current volume, and material. It also has methods to fill the bottle, drink from it, and check if it's empty or full.</p>
-    <label for="capacity">Capacity (1.5L):</label>
-    <input type="number" id="capacity" name="capacity" value="1500" step="100">
-    <button onclick="createBottle()">Create Bottle</button>
-    <br><br>    
+    
+    <label for="totalWater">Total Water (L):</label>
+    <input type="number" id="totalWater"  name="totalWater" >
+     <br>
+    <label  id="bottleCapacity" for="bottleCapacity">Bottle Capacity (L):</label>
+
+<br>
+    <button onclick="calculateBottles()">Calculate Bottles</button>
+    <p id="Output">Result
+    </p>
 
 </body>
 </html>
